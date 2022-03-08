@@ -10,7 +10,7 @@
     <body>
         <header>
             <inner-column>
-                <h1>Heading</h1>
+                <h1>Roshambo</h1>
             </inner-column>
         </header>
 
@@ -21,7 +21,7 @@
                     <picture>
                         <img src="../images/RockPaperScissorsLogo.svg">
                     </picture>
-                    <p>
+                    <p class="calm-voice">
                         <span style="color: #E11432">ROCK beats SCISSORS | </span>
                         <span style="color: #A3E2E9">PAPER beats ROCK | </span>
                         <span style="color: #6A44E5">SCISSORS beats PAPER</span>
@@ -30,41 +30,52 @@
                 </inner-column>
             </section>
                 
-            <!-- game -->
+            <!-- Winner -->
             <section>
                 <inner-column>
-
                     <winner-grid>
-                        
                         <player>
-
+                            <p class="calm-voice">Player</p>
+                            <choice-picture>
+                                <img class="choice-image" src="../images/questionmark.jpg">
+                            </choice-picture>
                         </player>
 
                         <ai>
-
+                            <p class="calm-voice">Computer</p>
+                            <choice-picture>
+                                <img class="choice-image" src="../images/questionmark.jpg">
+                            </choice-picture>
                         </ai>
-
                     </winner-grid>
+                    <p id="who-won" class="calm-voice-winner">
+                        Who will win?!
+                    </p>
+                </inner-column>
+            </section>
+            <!-- choices -->
+            <section>
+                <inner-column>
 
                     <weapon-grid>
-                        <div>
-                            <h2>Choose your weapon!</h2>
+                        <div class="choose-weapon">
+                            <p class="loud-voice">Choose your weapon!</p>
                         </div>
 
                         <ul class="weapon-list">
                             <li class="weapon">
                                 <weapon-picture>
-                                    <button type="rock-button"><img class="weapon-img" src="../images/rock.svg"></button>
+                                    <button id="rock-button" onclick="roshambo(1)"><img class="weapon-img" src="../images/rock.svg"></button>
                                 </weapon- picture>
                             </li>
                             <li class="weapon">
                                 <weapon-picture>
-                                    <button type="paper-button"><img class="weapon-img" src="../images/paper.svg"></button>
+                                    <button id="paper-button" onclick="roshambo(2)"><img class="weapon-img" src="../images/paper.svg"></button>
                                 </weapon-picture>
                             </li>
                             <li class="weapon">
                                 <weapon-picture>
-                                    <button type="scissors-button"><img class="weapon-img" src="../images/scissors.svg"></button>
+                                    <button id="scissors-button" onclick="roshambo(3)"><img class="weapon-img" src="../images/scissors.svg"></button>
                                 </weapon-picture>
                             </li>
                        </ul>
@@ -76,7 +87,13 @@
             <!-- wins/losses -->
             <section>
                 <inner-column>
-                    <h1>winn loss</h1>
+                    <div class="total-scores">
+                        <p class="loud-voice">SCORE</p>
+                        <ul class="scores">
+                            <li class="user-score">Your score is: 0</li>
+                            <li class="ai-score">Computer score is: 0</li>
+                        </ul>
+                    </div>
                 </inner-column>
             </section>
 
