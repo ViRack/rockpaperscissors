@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+
+* {
+    font-family: 'Sigmar One', cursive;
+}
+
+body {
+    background-color: rgb(39, 55, 110);
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vh;;
+}
+
+header {
+    background-color: #e74949;
+    color: rgb(39, 55, 110);
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    gap: 85%;
+}
+
+header a {
+    display: flex;
+    color:rgb(39, 55, 110);
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+.font-link {
+    color: #e74949;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #A3E2E9;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+	display: block;
+	width: 100vw;
+}
+
+#foot {
+	background-color:#e74949;
+    color: rgb(39, 55, 110);
+	text-align: center;
+	line-height: 2;
+}
+
+p {
+    color: whitesmoke;
+
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+inner-column {
+    display: flex;
+    flex-direction: column;
+	
+    width: 98%;
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+
+    padding: 10px;
+}
