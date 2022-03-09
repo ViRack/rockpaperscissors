@@ -17,7 +17,18 @@
 header {
     background-color:rgb(39, 55, 110);
     color: #e74949;
+}
 
+.header {
+    display: flex;
+    flex-direction: row;
+    gap: 80%;
+}
+
+header a {
+    display: flex;
+    color: #e74949;
+    text-align: right;
 }
 
 picture {
@@ -84,7 +95,7 @@ choice-picture {
     margin-right: auto;
 }
 
-.choice-img {
+.choice-img , #user-choice-img, #ai-choice-img {
     display: flex;
     width: 90%;
     height: auto;
@@ -127,6 +138,35 @@ p {
     text-align: center;
 }
 
+footer {
+	display: block;
+	width: 100vw;
+}
+
+#foot {
+	background-color:rgb(39, 55, 110);
+    color: #e74949;
+	text-align: center;
+	line-height: 2;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #A3E2E9;
+}
+
+button {
+    outline: none;
+    background-color: transparent;
+    border:none;
+    curser: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
 /* Structure */
 
 body {
@@ -134,7 +174,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
 
-    background-color: #c48b5d;
+    background-color: #ff7741;
 }
 
 main {
@@ -144,7 +184,7 @@ main {
 inner-column {
     display: flex;
     flex-direction: column;
-
+	
     width: 98%;
     max-width: 1100px;
     margin-right: auto;

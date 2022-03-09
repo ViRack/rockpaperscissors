@@ -10,7 +10,14 @@
     <body>
         <header>
             <inner-column>
-                <h1>Roshambo</h1>
+                <div class="header">
+                    <div class="logo">
+                        <a href="index.html">Roshambo</a>
+                    </div>
+                    <div class="links">
+                        <a href="about.html">About</a>
+                    </div>
+                </div>
             </inner-column>
         </header>
 
@@ -20,7 +27,7 @@
                 <inner-column>
                     <picture>
                         <img src="../images/RockPaperScissorsLogo.svg">
-                    </picture>
+                     </picture>
                     <p class="calm-voice">
                         <span style="color: #E11432">ROCK beats SCISSORS | </span>
                         <span style="color: #A3E2E9">PAPER beats ROCK | </span>
@@ -37,14 +44,14 @@
                         <player>
                             <p class="calm-voice">Player</p>
                             <choice-picture>
-                                <img class="choice-image" src="../images/questionmark.jpg">
+                                <img id="user-choice-image" src="../images/questionmark.jpg">
                             </choice-picture>
                         </player>
 
                         <ai>
                             <p class="calm-voice">Computer</p>
                             <choice-picture>
-                                <img class="choice-image" src="../images/questionmark.jpg">
+                                <img id="ai-choice-image" src="../images/questionmark.jpg">
                             </choice-picture>
                         </ai>
                     </winner-grid>
@@ -90,8 +97,8 @@
                     <div class="total-scores">
                         <p class="loud-voice">SCORE</p>
                         <ul class="scores">
-                            <li class="user-score">Your score is: 0</li>
-                            <li class="ai-score">Computer score is: 0</li>
+                            <li id="user-score">Your score is: 0</li>
+                            <li id="ai-score">Computer score is: 0</li>
                         </ul>
                     </div>
                 </inner-column>
@@ -99,10 +106,11 @@
 
         </main>
 
-        <footer>
+        <header>
             <inner-column>
-                <h1>Footer</h1>
-            </inner-column>        </footer>
+                <a id="foot" href="https://github.com/ViRack/rockpaperscissors">GitHub ViRack</a>
+            </inner-column>        
+		</header>
 
     </body>
 </html>     
